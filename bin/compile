@@ -33,7 +33,7 @@ then
    do
      lang="${array[i]}"
      echo $lang 'training data'
-     curl https://raw.githubusercontent.com/tesseract-ocr/tessdata/$TESSERACT_OCR_DATA_VERSION/$lang.traineddata > $INSTALL_DIR_TRAINING_DATA/$lang.traineddata
+     curl https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/$TESSERACT_OCR_DATA_VERSION/$lang.traineddata > $INSTALL_DIR_TRAINING_DATA/$lang.traineddata
    done
 fi
 

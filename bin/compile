@@ -35,12 +35,8 @@ then
      echo $lang 'training data'
      curl https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/$TESSERACT_OCR_DATA_VERSION/$lang.traineddata > $INSTALL_DIR_TRAINING_DATA/$lang.traineddata
    done
+   curl https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/$TESSERACT_OCR_DATA_VERSION/kor.traineddata > $INSTALL_DIR_TRAINING_DATA/kor.traineddata
    curl https://raw.githubusercontent.com/adrianlazaro8/Tesseract_sevenSegmentsLetsGoDigital/master/Trained data/lets.traineddata > $INSTALL_DIR_TRAINING_DATA/lets.traineddata
-   curl https://raw.githubusercontent.com/adrianlazaro8/Tesseract_sevenSegmentsLetsGoDigital/master/Trained data/lets.normproto > $INSTALL_DIR_TRAINING_DATA/lets.normproto
-   curl https://raw.githubusercontent.com/adrianlazaro8/Tesseract_sevenSegmentsLetsGoDigital/master/Trained data/lets.pffmtable > $INSTALL_DIR_TRAINING_DATA/lets.pffmtable
-   curl https://raw.githubusercontent.com/adrianlazaro8/Tesseract_sevenSegmentsLetsGoDigital/master/Trained data/lets.shapetable > $INSTALL_DIR_TRAINING_DATA/lets.shapetable
-   curl https://raw.githubusercontent.com/adrianlazaro8/Tesseract_sevenSegmentsLetsGoDigital/master/Trained data/lets.unicharset > $INSTALL_DIR_TRAINING_DATA/lets.unicharset
-
 fi
 
 echo "Building runtime environment for Tesseract-OCR"
